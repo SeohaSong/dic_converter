@@ -8,16 +8,18 @@
 
 ## Usage
 
+### Array-Dictionary => XML
+
 ```python
 
 from dic_to import arrdic2xml
 
 
 arrdic = [
-    {"div name='myname' type='mytype'": [
-        {"a": "text"},
-        {"a": "texttext"},
-        {"span name='myspan'": "texttexttexttexttext"}
+    {"animal name='myname' type='mytype'": [
+        {"cat": "text"},
+        {"horse": "texttext"},
+        {"tiger type='warning'": "texttexttexttexttext"}
     ]}
 ]
 
@@ -25,16 +27,16 @@ bs = arrdic2xml.convert(arrdic)
 print(bs.prettify())
 
 >>> <?xml version="1.0" encoding="utf-8"?>
-... <div name="myname" type="mytype">
-...  <a>
+... <animal name="myname" type="mytype">
+...  <cat>
 ...   text
-...  </a>
-...  <a>
+...  </cat>
+...  <horse>
 ...   texttext
-...  </a>
-...  <span name="myspan">
+...  </horse>
+...  <tiger name="warning">
 ...   texttexttexttexttext
-...  </span>
-... </div>
+...  </tiger>
+... </animal>
 
 ```
