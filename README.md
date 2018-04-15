@@ -14,6 +14,7 @@
 
 from dic_to import dic2obj
 
+
 dic = {"a": 1, "b": {"c": 2}}
 obj = dic2obj.convert(dic)
 
