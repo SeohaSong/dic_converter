@@ -38,7 +38,7 @@ print(bs.prettify())
  <horse>
   texttext
  </horse>
- <tiger name="warning">
+ <tiger type="warning">
   texttexttexttexttext
  </tiger>
 </animal>
