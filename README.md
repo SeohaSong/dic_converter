@@ -26,7 +26,7 @@ arrdic = [
 bs = arrdic2xml.convert(arrdic)
 print(bs.prettify())
 
->>> < xml text >
+>>> ...(below xml text)
 ```
 
 ```xml
