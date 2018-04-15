@@ -25,18 +25,21 @@ arrdic = [
 
 bs = arrdic2xml.convert(arrdic)
 print(bs.prettify())
+>>> < xml text >
+```
 
->>> <?xml version="1.0" encoding="utf-8"?>
-... <animal name="myname" type="mytype">
-...  <cat>
-...   text
-...  </cat>
-...  <horse>
-...   texttext
-...  </horse>
-...  <tiger name="warning">
-...   texttexttexttexttext
-...  </tiger>
-... </animal>
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<animal name="myname" type="mytype">
+ <cat>
+  text
+ </cat>
+ <horse>
+  texttext
+ </horse>
+ <tiger name="warning">
+  texttexttexttexttext
+ </tiger>
+</animal>
 
 ```
