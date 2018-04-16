@@ -3,7 +3,7 @@
 
 ## About
 
-> Module for python dictionary converting to *xml, object etc.*
+> Module for converting python-dictionary to *xml, object etc.*
 
 
 ## Usage
