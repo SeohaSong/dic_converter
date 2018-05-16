@@ -1,4 +1,4 @@
-# dic_to
+# dic_converter
 
 
 ## About

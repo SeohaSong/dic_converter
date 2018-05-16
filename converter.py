@@ -2,7 +2,7 @@
 from bs4 import BeautifulSoup
 
 
-def convert(arrdic):
+def convert2xml(arrdic):
 
     def do_arrdic2xml(arrdic):
         return "".join([_do_dic2tag(dic) for dic in arrdic])
@@ -17,3 +17,18 @@ def convert(arrdic):
     xml = do_arrdic2xml(arrdic)
     bs = BeautifulSoup(xml, "xml")
     return bs
+
+
+def convert2obj(dic):
+
+    class Obj():
+        def __init__(self, dic):
+            for key in dic:
+                value = dic[key]
+                if type(value) == dict:
+                    obj = Obj(value)
+                    setattr(self, key, obj)
+                else:
+                    setattr(self, key, value)
+                    
+    return Obj(dic)
